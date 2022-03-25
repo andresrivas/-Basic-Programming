@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=“es”>
+<head>
+<meta charset=“UTF-8”>
+<meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+<title>Ciclos</title>
+<link rel=“stylesheet” href=“dibujo.css”/>
+</head>
+<body>
+<h1>Dibujando curvas a partir de lineas</h1><br>
+<p>
+<label for=“texto_lineas”><b>¿Cuántas lineas quieres?</b></label>
+<input type=“text” placeholder="# de lineas" maxlength=“3” id=“texto_lineas”/>
+<br>
+</p>
+<p>
+<label for=“color_ciclo”><b>Escoge tu color</b></label>
+<input type=“color” id=“color_ciclo”>
+<br>
+</p>
+<p>
+<b>Escoge en qué parte lo quieres:</b>
+<select id=“lado”>
+<option value=“superior_izquierda”>Superior izquierda</option>
+<option value=“superior_derecha”>Superior derecha</option>
+<option value=“inferior_izquierda”>Inferior izquierda</option>
+<option value=“inferior_derecha”>Inferior derecha</option>
+<option value=“todo”>Todo</option>
+<br>
+</select>
+</p>
+<p>
+<label for=“t_canvas”><b>¿De qué tamaño lo quieres?</b></label>
+<input type=“text” placeholder=“Ejemplo: ‘‘300’’” maxlength=“4” id=“t_canvas”>
+<br>
+</p>
+<p>
+<input type=“button” value="¡A dibujar!" id=“botón_lineas”/>
+<br>
+</p>
+<canvas id=“malla”></canvas>
+<br>
+<p>
+<strong>Así queda tu dibujo</strong>
+<br>
+</p>
+<script src=“dibujo2.js”></script>
+</body>
+</html>
